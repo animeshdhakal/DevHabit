@@ -1,0 +1,30 @@
+meta {
+  name: Create Habit
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/habits
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Test",
+    "type": 2,
+    "frequency": {
+      "type": 1,
+      "timesPerPeriod": 1
+    },
+    "target": {
+      "value": 30,
+      "unit": "minutes"
+    }
+  }
+}

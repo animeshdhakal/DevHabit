@@ -1,0 +1,21 @@
+meta {
+  name: Get Tag
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/tags/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: t_01972a0e-402f-7a78-a960-77702d06f815
+}
+
+body:json {
+  {
+    "description": "Hello Sahab"
+  }
+}

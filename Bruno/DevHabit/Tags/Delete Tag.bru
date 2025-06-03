@@ -1,0 +1,21 @@
+meta {
+  name: Delete Tag
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/tags/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: t_01972a05-92cc-75de-9149-2dd91f8337c5
+}
+
+body:json {
+  {
+    "description": "Hello Sahab"
+  }
+}

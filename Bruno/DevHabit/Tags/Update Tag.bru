@@ -1,0 +1,15 @@
+meta {
+  name: Update Tag
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/tags/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: t_01972a05-92cc-75de-9149-2dd91f8337c5
+}

@@ -1,0 +1,7 @@
+﻿services:
+  devhabit.api:
+    image: devhabit.api
+    build:
+      context: .
+      dockerfile: DevHabit.Api/Dockerfile
+

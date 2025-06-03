@@ -1,0 +1,24 @@
+meta {
+  name: Upsert Habit Tags
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/habits/:habitId/tags
+  body: json
+  auth: inherit
+}
+
+params:path {
+  habitId: h_01972f28-8119-79c3-bedf-8767c131bcd9
+}
+
+body:json {
+  {
+    "tagIds": [
+      "t_01972f28-9f0f-709c-ac43-bc0a3ea32476"
+    
+    ]
+  }
+}

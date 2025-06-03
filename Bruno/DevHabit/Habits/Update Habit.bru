@@ -1,0 +1,35 @@
+meta {
+  name: Update Habit
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/habits/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: h_019726ce-ecf3-7edb-b8f0-2165c3d7a837
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Test",
+    "description": "this is a fucking description",
+    "type": 2,
+    "frequency": {
+      "type": 1,
+      "timesPerPeriod": 1
+    },
+    "target": {
+      "value": 30,
+      "unit": "minutes"
+    }
+  }
+}

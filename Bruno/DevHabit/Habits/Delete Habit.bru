@@ -1,0 +1,19 @@
+meta {
+  name: Delete Habit
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/habits/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: h_019726d6-fdb0-7df1-9402-7f4042142e27
+}
+
+headers {
+  Content-Type: application/json
+}
